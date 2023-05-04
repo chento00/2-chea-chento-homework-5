@@ -1,4 +1,3 @@
-import { data } from 'autoprefixer';
 import React, { useEffect, useState } from 'react'
 import DataTable from 'react-data-table-component';
 
@@ -20,12 +19,10 @@ export default function RenderTable() {
 		{
 			name:"ProductName",
 			selector:(row)=><p style={{fontSize:"12px",fontWeight:"500"}}>{row.title}</p>
-
 		},
 		{
 			name:"Price",
 			selector:(row)=><p style={{fontSize:"12px",fontWeight:"500"}}>{row.price+" $"}</p>
-// <p style={{fontSize:"12px",fontWeight:"500"}}>{row.price+" $"}</p>
 		},
 		{
 			name:"Category",
